@@ -46,8 +46,8 @@ task arcadekicker{while(true){
 task tankkicker{while(true){
 	motor[mleft]=vexRT(Ch3);
 	motor[mright]=vexRT(Ch2);
-	if(vexRT[Btn5U]==1){motor[leg]=127;}
-	else if(vexRT[Btn5D]==1){motor[leg]=-127;}
+	if(vexRT[Btn5U]==1){motor[leg]=-127;}
+	else if(vexRT[Btn5D]==1){motor[leg]=127;}
 	else if(vexRT[Btn6D]==1){motor[kick]=127;}
 	else if(vexRT[Btn6U]==1){motor[kick]=-127;}
 	else{motor[kick]=0;motor[leg]=0;}
@@ -56,8 +56,8 @@ task tankkicker{while(true){
 //Task Main
 task main(){
 	while(true){
-		if(vexRT[Btn8R]==1){StopTask(terrain);StopTask(arcade);StopTask(tank);StopTask(slowtank);StopTask(bumper);StopTask(goalie);StopTask(kicker);
-		end();}
+		if(vexRT[Btn8R]==1){StopTask(terrain);StopTask(arcade);StopTask(tank);StopTask(slowtank);StopTask(bumper);StopTask(goalie);StopTask(arcadekicker);
+			StopTask(tankkicker);end();}
 		else if(vexRT[Btn8U]==1){StartTask(arcade);}
 		else if(vexRT[Btn8D]==1){StartTask(tank);}
 		else if(vexRT[Btn8L]==1){StartTask(terrain);}
