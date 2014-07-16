@@ -35,13 +35,22 @@ task goalie{while(true){
 	 wait1Msec(9000);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(750);
 	 end();
 }}
-task kicker{while(true){
+task arcadekicker{while(true){
 	motor[mleft]  = (vexRT[Ch2] + vexRT[Ch1]);
 	motor[mright] = (vexRT[Ch2] - vexRT[Ch1]);
 	motor[leg] = (vexRT[Ch4] + vexRT[Ch3]);
 	if(vexRT[Btn6D]==1){motor[kick]=127;}
 	else if(vexRT[Btn6U]==1){motor[kick]=-127;}
 	else{motor[kick]=0;}
+}}
+task tankkicker{while(true){
+	motor[mleft]=vexRT(Ch3);
+	motor[mright]=vexRT(Ch2);
+	if(vexRT[Btn5U]==1){motor[leg]=127;}
+	else if(vexRT[Btn5D]==1){motor[leg]=-127;}
+	else if(vexRT[Btn6D]==1){motor[kick]=127;}
+	else if(vexRT[Btn6U]==1){motor[kick]=-127;}
+	else{motor[kick]=0;motor[leg]=0;}
 }}
 //___________________________________________________________________________________________________
 //Task Main
@@ -52,8 +61,9 @@ task main(){
 		else if(vexRT[Btn8U]==1){StartTask(arcade);}
 		else if(vexRT[Btn8D]==1){StartTask(tank);}
 		else if(vexRT[Btn8L]==1){StartTask(terrain);}
-		else if(vexRT[Btn7U]==1){StartTask(goalie);}
-		else if(vexRT[Btn7D]==1){StartTask(kicker);}
+		else if(vexRT[Btn7L]==1){StartTask(goalie);}
+		else if(vexRT[Btn7U]==1){StartTask(arcadekicker);}
+		else if(vexRT[Btn7D]==1){StartTask(tankkicker);}
 		else if(SensorValue(bump)==1){StartTask(bumper);}
 		else if(SensorValue(light)>400){StopTask(terrain);StopTask(arcade);StopTask(tank);StartTask(slowtank);}
 
