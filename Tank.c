@@ -39,6 +39,9 @@ task goalie{while(true){
 	 wait1Msec(4042);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
 	 wait1Msec(7615);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
 	 wait1Msec(3315);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
+	 wait1Msec(1819);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
+	 wait1Msec(4678);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
+	 wait1Msec(6278);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
 }}
 task arcadekicker{while(true){
 
