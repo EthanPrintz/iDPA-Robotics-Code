@@ -32,16 +32,16 @@ task bumper{while(true){
 	motor[mleft]=100;wait1Msec(1100);end();StopTask(bumper);
 }}
 task goalie{while(true){
-	 wait1Msec(9029);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(5276);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(2565);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(8851);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(4042);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(7615);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(3315);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(1819);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(4678);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
-	 wait1Msec(6278);motor[mleft]=127;motor[mright]=127;wait1Msec(750);motor[mleft]=-127;motor[mright]=-127;wait1Msec(790);end();
+	 wait1Msec(9029);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(5276);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(2565);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(8851);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(4042);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(7615);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(3315);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(1819);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(4678);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
+	 wait1Msec(6278);motor[mleft]=127;motor[mright]=127;wait1Msec(750);end();wait1Msec(35);motor[mleft]=-118;motor[mright]=-80;wait1Msec(860);end();
 }}
 task arcadekicker{while(true){
 
